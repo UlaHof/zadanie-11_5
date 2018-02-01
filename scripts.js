@@ -6,7 +6,7 @@ Button.prototype.create = function() {
     this.$element = $('<button>');
     this.$element.text(this.text);
     this.$element.click(function() {
-        alert(this.text);
+        alert(self.text);
     });
     $('body').append(this.$element);
 }
